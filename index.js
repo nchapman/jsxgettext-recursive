@@ -51,6 +51,9 @@ function extractStrings(options) {
           case 'swig':
             generator = 'generateFromswig';
               break;
+          case 'golang':
+            generator = 'generateFromgolang';
+              break;
           default:
             generator = 'generateFrom' + key[0].toUpperCase() + key.slice(1).toLowerCase();
         };
